@@ -1,19 +1,27 @@
-symbol SENSOR_ENTRANCE1 = pinC.0
-symbol SENSOR_ENTRANCE2 = pinC.1
-symbol SENSOR_EXIT1 = pinC.2
-symbol SENSOR_EXIT2 = pinC.3
+symbol SENSOR1 = pinC.0
+symbol SENSOR2 = pinC.1
+symbol SENSOR3 = pinC.2
+symbol SENSOR4 = pinC.3
 
 symbol EENTRANCE = B.0
 symbol EEXIT = B.1
 
-symbol REMAINING = 10
-symbol OCUPIED = 0
+symbol REMAINING = b0
+let REMAINING = 10
+symbol OCUPIED = b1
+let OCUPIED = 0
 
 main:
-	if SENSOR_ENTRANCE1 = 1 then
+	if SENSOR1 = 1 then
 		high EENTRANCE
 	else
 		low EENTRANCE
+	endif
+	
+	if SENSOR2 = 1 AND SENSOR1 = 0 then
+		low EENTRANCE
+		let REMAINING = REMAINING - 1
+		OCUPIED = OCUPIED + 1
 	endif
 	
 	goto main
