@@ -8,16 +8,16 @@ symbol EEXIT = B.1
 
 symbol REMAINING = b13
 let REMAINING = 10
-symbol OCUPIED = b12
-let OCUPIED = 0
+symbol OCCUPIED = b12
+let OCCUPIED = 0
 symbol CONTROL = b11
 let CONTROL = 200
 
 main:
 	input C.1
-	if SENSOR1 = 1 then
+	if SENSOR1 = 1 AND SENSOR2 = 0 then
 		high EENTRANCE
-		pause 5000
+		pause 1000
 	endif
 	
 	if SENSOR2 = 1 then
@@ -29,7 +29,7 @@ main:
 	if CONTROL = 255 AND SENSOR1 = 0 then
 		low EENTRANCE
 		let REMAINING = REMAINING - 1
-		OCUPIED = OCUPIED + 1
+		OCCUPIED = OCCUPIED + 1
 		CONTROL = 200
 		output C.1
 		SENSOR2 = 0
