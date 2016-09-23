@@ -18,10 +18,12 @@ main:
 		low EENTRANCE
 	endif
 	
-	if SENSOR2 = 1 AND SENSOR1 = 0 then
+	reverse EENTRANCE
+	
+	if SENSOR2 = 1 AND SENSOR1 = 0 AND EENTRANCE = 0 then
 		low EENTRANCE
 		let REMAINING = REMAINING - 1
 		OCUPIED = OCUPIED + 1
 	endif
-	
+
 	goto main
