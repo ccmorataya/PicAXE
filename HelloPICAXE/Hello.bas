@@ -1,6 +1,9 @@
+symbol RED_LED = 7
+symbol YELLOW_LED = 6
+symbol GREEN_LED = 5
 main:
-	high 7
+	high RED_LED
 	pause 1000
-	low 7
+	low RED_LED
 	pause 1000
 	goto main
