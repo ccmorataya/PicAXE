@@ -5,12 +5,13 @@
   <ReplaceSearchHistory />
   <Bookmarks />
   <BreakPoints>
-    <int>28</int>
-    <int>35</int>
+    <int>16</int>
+    <int>31</int>
+    <int>39</int>
   </BreakPoints>
   <SelectedLine>0</SelectedLine>
   <SelectedColumn>0</SelectedColumn>
-  <CaretOffset>596</CaretOffset>
+  <CaretOffset>266</CaretOffset>
   <BottomVerticalSplitterPosition>0</BottomVerticalSplitterPosition>
   <TopVerticalSplitterPosition>0</TopVerticalSplitterPosition>
   <HorizontalSplitterPosition>0</HorizontalSplitterPosition>

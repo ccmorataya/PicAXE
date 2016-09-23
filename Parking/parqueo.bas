@@ -14,10 +14,13 @@ symbol CONTROL = b11
 let CONTROL = 200
 
 main:
-	input C.1
 	if SENSOR1 = 1 AND SENSOR2 = 0 then
-		high EENTRANCE
-		pause 1000
+		'input B.0
+		if pinB.0 = 0 then
+			high EENTRANCE
+			pause 1000
+		endif
+		'output B.0
 	endif
 	
 	if SENSOR2 = 1 then
@@ -33,6 +36,7 @@ main:
 		CONTROL = 200
 		output C.1
 		SENSOR2 = 0
+		input C.1
 	endif
 
 	goto main
