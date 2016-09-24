@@ -40,7 +40,12 @@ main:
 		if pinB.1 = 0 then
 			high EEXIT
 		endif
-		
+	elseif SENSOR4 = 1 AND SENSOR3 = 0 then
+		if pinB.1 = 1 then
+			low EEXIT	
+			REMAINING = REMAINING + 1
+			OCCUPIED = OCCUPIED - 1
+		endif
 	endif
 	
 	goto main
