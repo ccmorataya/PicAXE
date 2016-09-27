@@ -15,12 +15,9 @@ let CONTROL = 200
 
 main:
 	if SENSOR1 = 1 AND SENSOR2 = 0 then
-		'input B.0
 		if pinB.0 = 0 then
 			high EENTRANCE
-			pause 1000
 		endif
-		'output B.0
 	endif
 	
 	if SENSOR2 = 1 then
@@ -31,7 +28,7 @@ main:
 	
 	if CONTROL = 255 AND SENSOR1 = 0 then
 		low EENTRANCE
-		let REMAINING = REMAINING - 1
+		REMAINING = REMAINING - 1
 		OCCUPIED = OCCUPIED + 1
 		CONTROL = 200
 		output C.1
@@ -39,4 +36,18 @@ main:
 		input C.1
 	endif
 
+	if SENSOR3 = 1 then
+		if pinB.1 = 0 then
+			high EEXIT
+		endif
+	elseif SENSOR4 = 1 AND SENSOR3 = 0 then
+		if pinB.1 = 1 then
+			low EEXIT	
+			if REMAINING < 10 AND OCCUPIED > 0 then
+				REMAINING = REMAINING + 1
+				OCCUPIED = OCCUPIED - 1
+			endif
+		endif
+	endif
+	
 	goto main

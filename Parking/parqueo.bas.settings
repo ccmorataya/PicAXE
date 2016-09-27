@@ -4,14 +4,10 @@
   <ReplaceHistory />
   <ReplaceSearchHistory />
   <Bookmarks />
-  <BreakPoints>
-    <int>16</int>
-    <int>31</int>
-    <int>39</int>
-  </BreakPoints>
+  <BreakPoints />
   <SelectedLine>0</SelectedLine>
   <SelectedColumn>0</SelectedColumn>
-  <CaretOffset>266</CaretOffset>
+  <CaretOffset>259</CaretOffset>
   <BottomVerticalSplitterPosition>0</BottomVerticalSplitterPosition>
   <TopVerticalSplitterPosition>0</TopVerticalSplitterPosition>
   <HorizontalSplitterPosition>0</HorizontalSplitterPosition>
