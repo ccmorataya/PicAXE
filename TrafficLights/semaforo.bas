@@ -1,13 +1,38 @@
-symbol RED_LED = 7
-symbol YELLOW_LED = 6
-symbol GREEN_LED = 5
+symbol RED = B.0
+symbol YELLOW = B.1
+symbol GREEN = B.2
+
 main:
-	high RED_LED
-	high YELLOW_LED
-	high GREEN_LED
+	'The green LED block and transition to yellow
+	high GREEN
+	pause 3000
+	low GREEN
+	pause 250
+	high GREEN
+	pause 250
+	low GREEN
+	pause 250
+	high GREEN
+	pause 250
+	low GREEN
+	pause 250
+	high GREEN
+	pause 250
+	low GREEN
+	
+	high YELLOW
+	pause 3000
+	low YELLOW
 	pause 1000
-	low RED_LED
-	low YELLOW_LED
-	low GREEN_LED
+	high YELLOW
 	pause 1000
+	low YELLOW
+		
+	high RED
+	pause 3000
+	low RED
+	pause 1000
+	high RED
+	pause 1000
+	low RED
 	goto main
