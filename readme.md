@@ -6,7 +6,7 @@ Exercices made in class/home to program a PicAXE
 
 * TrafficLights:
 
-	Incomplete exercise about a simple Traffic ligth program.
+	Simple Traffic ligth program using two switches.
 
 * Parking:
 
