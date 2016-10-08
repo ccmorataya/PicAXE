@@ -1,13 +1,17 @@
 # PicAXE programming
 Exercices made in class/home to program a PicAXE
-* HelloPICAXE:
+* 00_HelloPICAXE:
 
 	Is a simple helloWorld in pin 7.
 
-* TrafficLights:
+* 01_TrafficLights:
 
 	Simple Traffic ligth program using two switches.
 
-* Parking:
+* 02_Multiplexor:
+
+	Basic function of a multiplexor.
+
+* 03_Parking:
 
 	A parking control using sensors and doors.
