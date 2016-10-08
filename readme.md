@@ -1,6 +1,6 @@
 # PicAXE programming
 Exercices made in class/home to program a PicAXE
-* 00_HelloPICAXE:
+* 00_HelloPICAXE (this is the example, not necessary to code):
 
 	Is a simple helloWorld in pin 7.
 
